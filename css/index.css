@@ -1,52 +1,5 @@
 /*container*/
-
-.container {
-width: 1440px;
-}
-
-.header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-items: center;
-  margin-left: 168px;
-  margin-right: 152px;
-}
-
-.header-list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 29px;
-  margin-right: 165px;
-}
-
-.headline{
-    background-image: 
-    url("../images/Nike.jpg");
-    background-repeat: no-repeat;
-}
-
-.quality  {
-    background-image: 
-    url("../images/gradientquality.jpg");
-    background-repeat: no-repeat;
-}
-
-.reviews{
-    background-image: 
-    url("../images/gradientreviews.jpg");
-    background-repeat: no-repeat;
-}
-
-.order{
-    background-image: 
-    url("../images/gradientorder.png");
-    background-repeat: no-repeat;
-}
-
 /*disign*/
-
 .header {
     background-color: #012D63;
 }
@@ -150,14 +103,14 @@ color: #FFFFFF;
 
 /*Playfair Display Regular*/
 
-.headeline-title {
+.headline-title {
 font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 144px;
 color: #FFFFFF;
 }
 
-.headeline-subtitle {
+.headline-subtitle {
 font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 72px;
@@ -201,7 +154,6 @@ color: #C7C7C7;
 font-weight: 300;
 font-size: 24px;
 color: #DCDCDC;
-margin-left: 73px;
 }
 
 
@@ -222,13 +174,3 @@ color: #FFFFFF;
 }
 
 /*paddings*/
-
-.logo-photo {
-  padding-top: 16px;
-  padding-bottom: 14px;
-}
-
-.header-list {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
