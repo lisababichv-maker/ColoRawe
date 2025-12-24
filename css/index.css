@@ -1,7 +1,86 @@
+/*container*/
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: center;
+  margin-left: 168px;
+  margin-right: 152px;
+}
+
+.header-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 29px;
+  margin-right: 165px;
+}
+ 
+.headline {
+  background-image: url("../images/Nike.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.headline .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: cover;
+background-position: center;
+
+}
+
+.quality {
+  background-image: url("../images/gradientquality.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.quality-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quality-pair {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+}
+
+.quality  .quality-pair.reverse {
+  flex-direction: column-reverse ;
+}
+
+.reviews {
+    background-image: 
+    url("../images/gradientreviews.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+background-position: center;
+}
+
+.order {
+  background-image: url("../images/gradientorder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /*disign*/
 .header {
     background-color: #012D63;
+}
+
+.headline-button {
+background-color: #8E32C6;
+border-radius: 10px;
+width: 254px;
+height: 67px;
 }
 
 .footer {
@@ -28,6 +107,9 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 18px;
 color: #FFFFFF;
+margin-top: 19px;
+margin-left: 164px;
+margin-right: 768px;
 }
 
 .headline-button {
@@ -35,6 +117,10 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
+margin-top: 41px;
+margin-left: 164px;
+margin-right: 1022px; 
+margin-bottom: 183px;
 }
 
 .reviews-maintext {
@@ -108,6 +194,9 @@ font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 144px;
 color: #FFFFFF;
+margin-top: -20px;
+margin-left: 156px;
+margin-right: 644px;
 }
 
 .headline-subtitle {
@@ -115,6 +204,9 @@ font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 72px;
 color: #FFFFFF;
+margin-left: 164px;
+margin-right: 736px;
+margin-top: -10px;
 }
 
 .quality-text {
@@ -123,6 +215,8 @@ font-weight: 400;
 font-size: 36px;
 text-align: center;
 color: #FFFFFF;
+margin-left: 256px;
+margin-right: 259px;
 }
 
 .reviews-title {
@@ -154,6 +248,7 @@ color: #C7C7C7;
 font-weight: 300;
 font-size: 24px;
 color: #DCDCDC;
+margin-left: 72px;
 }
 
 
@@ -164,6 +259,9 @@ font-family: 'PT Serif', serif;
 font-weight: 400;
 font-size: 48px;
 color: #FFFFFF;
+margin-left: 195px;
+margin-right: 1067px;
+margin-top: -24px;
 }
 
 .footer-pretitle {
@@ -171,4 +269,25 @@ font-family: 'PT Serif', serif;
 font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
+}
+
+/*paddings*/
+
+.logo-photo {
+  padding-top: 16px;
+  padding-bottom: 14px;
+}
+
+.header-list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.headline-photo {
+    width: 160px;
+    height: 120px;
+  margin-top: 94px;
+  margin-left: 170px;
+  margin-right: 1110px;
+
 }
