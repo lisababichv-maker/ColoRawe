@@ -77,7 +77,73 @@ background-position: center;
     url("../images/gradientreviews.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-background-position: center;
+    background-position: 
+    center;
+}
+
+.reviews {
+  position: relative;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 340px;
+  height: 380px;
+  background: url("../images/leaves.png") left bottom / contain no-repeat;
+}
+
+
+.reviews-list {
+  display: flex;
+}
+
+.reviews-item:first-child {
+  border-radius: 15px;
+  width: 255px;
+height: 292px;
+  background: linear-gradient(
+    to right bottom,
+    #00E5E6,
+    #00A8F7,
+    #9A76F9,
+    #CC5EC2
+  );
+}
+
+.reviews-item:nth-child(2) {
+  border-radius: 15px;
+  width: 255px;
+height: 292px;
+margin-left: 93px;
+  background: linear-gradient(
+    to right bottom,
+    #FF68B4,
+    #FF45E1,
+    #CE3AFF,
+    #8961FF
+  );
+}
+
+.reviews-item:last-child {
+  border-radius: 15px;
+  width: 255px;
+height: 292px;
+margin-left: 93px;
+margin-right: 246px;
+  background: linear-gradient(
+    to right bottom,
+    #FFE128,
+    #FF9B5C,
+    #FF8381,
+    #FF5489
+  );
+}
+
+.reviews-maintext {
+  display: flex;
 }
 
 .order {
@@ -129,6 +195,7 @@ color: #FFFFFF;
 margin-left: 72px;
 }
 
+
 .headline-text {
 font-family: 'Roboto', sans-serif;
 font-weight: 400;
@@ -155,6 +222,10 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
+margin-bottom: 8px;
+margin-left: 13px;
+margin-right: 14px;
+margin-top: 49px;
 }
 
 .reviews-date {
@@ -162,6 +233,7 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 14px;
 color: #D8D8D8;
+margin-bottom: 47px;
 }
 
 .reviews-subtitle {
@@ -169,6 +241,7 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 14px;
 color: #FFFFFF;
+margin-bottom: 1px;
 }
 
 .reviews-text {
@@ -325,4 +398,8 @@ color: #FFFFFF;
 .quality-list {
   display: flex;
   gap: 145px;
+}
+
+.reviews {
+  padding-left: 243px;
 }
