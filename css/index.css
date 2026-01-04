@@ -69,12 +69,27 @@ background-position: center;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  position: relative;
 }
 
-.quality-item:not(:last-child) {
-      border-right:
-       1px solid white;
+.quality-item:nth-child(1)::after,
+.quality-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: white;
 }
+
+.quality-item:nth-child(1)::after {
+    right: -95px;
+}
+
+.quality-item:nth-child(2)::after {
+  right: -50px;
+}
+
 
 .reviews {
   position: relative;
