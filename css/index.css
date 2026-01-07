@@ -1,12 +1,16 @@
 /*container*/
+.container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  }
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   align-items: center;
-  margin-left: 168px;
-  margin-right: 152px;
 }
 
 .header-list {
@@ -14,7 +18,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 29px;
-  margin-right: 165px;
+  
 }
  
 .headline {
@@ -40,54 +44,31 @@ background-position: center;
   background-size: cover;
 }
 
-.quality {
-  display: flex;
-  justify-content: center;
-}
 
-
-.quality {
-  position: relative;
-}
-
-.quality::before {
-  content: "";
-  position: absolute;
-  top: 105px;
-  bottom: 105px;
-  left: 165px;
-  right: 165px;
-  border: 5px solid #8E32C6;
-}
 
 .quality-list {
   display: flex;
-  gap: 145px;
+  align-items: center;
+  border: 5px solid #8e32c6;
+  padding: 25px 0px;
 }
+
+
 
 .quality-item {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  position: relative;
+  gap: 4px; 
+  padding: 0px 50px;
+  border-right: 1px solid #FFFFFF;
 }
 
-.quality-item:nth-child(1)::after,
-.quality-item:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: white;
+.quality-item:nth-child(2) {
+  padding: 0px 95px;
 }
 
-.quality-item:nth-child(1)::after {
-    right: -95px;
-}
-
-.quality-item:nth-child(2)::after {
-  right: -50px;
+.quality-item:last-child {
+  border-right: none;
 }
 
 
@@ -178,6 +159,7 @@ background-position: center;
   display: flex;
 }
 .order {
+  text-align: center;
   background-image: url("../images/gradientorder.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -318,8 +300,7 @@ font-weight: 400;
 font-size: 18px;
 color: #FFFFFF;
 margin-top: 19px;
-margin-left: 164px;
-margin-right: 768px;
+max-width: 508px;
 }
 
 .headline-button {
@@ -328,8 +309,6 @@ font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
 margin-top: 41px;
-margin-left: 164px;
-margin-right: 1022px; 
 margin-bottom: 183px;
 }
 
@@ -421,8 +400,6 @@ font-weight: 400;
 font-size: 144px;
 color: #FFFFFF;
 margin-top: -20px;
-margin-left: 156px;
-margin-right: 644px;
 }
 
 .headline-subtitle {
@@ -430,8 +407,6 @@ font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 72px;
 color: #FFFFFF;
-margin-left: 164px;
-margin-right: 736px;
 margin-top: -10px;
 }
 
@@ -456,6 +431,7 @@ font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 48px;
 color: #FFFFFF;
+margin-bottom: 33px;
 }
 
 /*Roboto Light*/
@@ -483,8 +459,6 @@ font-family: 'PT Serif', serif;
 font-weight: 400;
 font-size: 48px;
 color: #FFFFFF;
-margin-left: 195px;
-margin-right: 1067px;
 margin-top: -24px;
 }
 
@@ -511,10 +485,7 @@ color: #FFFFFF;
     width: 160px;
     height: 120px;
   margin-top: 94px;
-  margin-left: 170px;
-  margin-right: 1110px;
-}
-
+ }
 .quality {
   padding-left: 215px;
   padding-right: 215px;
@@ -533,12 +504,6 @@ color: #FFFFFF;
 
 .reviews-photo {
   margin-left: 18px;
-}
-
-.order-title {
- padding-left: 655px;
- padding-top: 21px;
- padding-bottom: 33px;
 }
 
 

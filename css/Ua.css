@@ -1,4 +1,11 @@
-/*container*/
+
+.container {
+  width: 1140px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
 
 .header .container {
   display: flex;
@@ -40,14 +47,7 @@ background-position: center;
   background-size: cover;
 }
 
-.quality {
-  display: flex;
-  justify-content: center;
-}
 
-.quality {
-  position: relative;
-}
 
 .quality::before {
   content: "";
@@ -56,54 +56,65 @@ background-position: center;
   bottom: 105px;
   left: 165px;
   right: 165px;
-  border: 5px solid #8E32C6;
 }
-
 
 .quality-list {
   display: flex;
-  gap: 145px;
+  align-items: center;
+  border: 5px solid #8e32c6;
+  padding: 25px 0px;
 }
+
 
 
 .quality-item {
   display: flex;
-  flex-direction: column ;
-  gap: 4px;
+  flex-direction: column;
+  gap: 4px; 
+  padding: 0px 50px;
+  border-right: 1px solid #FFFFFF;
 }
 
-.reviews {
-    background-image: 
-    url("../images/gradientreviews.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 
-    center;
+.quality-item:nth-child(2) {
+  padding: 0px 95px;
 }
+
+.quality-item:last-child {
+  border-right: none;
+}
+
 
 .reviews {
   position: relative;
+  background-image: url("../images/gradientreviews.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 .reviews::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 340px;
   height: 380px;
-  background: url("../images/leaves.png") left bottom / contain no-repeat;
+  background-image: url("../images/leaves.png");
+  background-repeat: no-repeat;
+  background-size: 340px 380px;
+  pointer-events: none;
 }
 
 
 .reviews-list {
   display: flex;
+  justify-content: center;
 }
 
 .reviews-item:first-child {
   border-radius: 15px;
   width: 255px;
-height: 292px;
+  height: 292px;
   background: linear-gradient(
     to right bottom,
     #00E5E6,
@@ -111,13 +122,16 @@ height: 292px;
     #9A76F9,
     #CC5EC2
   );
+  box-shadow: 
+    0px 14px 0px -5px #7B54B2,
+    0px 30px 0px -13px #533978;
 }
 
 .reviews-item:nth-child(2) {
   border-radius: 15px;
   width: 255px;
-height: 292px;
-margin-left: 93px;
+  height: 292px;
+  margin-left: 93px;
   background: linear-gradient(
     to right bottom,
     #FF68B4,
@@ -125,14 +139,16 @@ margin-left: 93px;
     #CE3AFF,
     #8961FF
   );
+  box-shadow: 
+    0px 14px 0px -5px #9159B1,
+    0px 30px 0px -13px #61337C;
 }
 
 .reviews-item:last-child {
   border-radius: 15px;
   width: 255px;
-height: 292px;
-margin-left: 93px;
-margin-right: 246px;
+  height: 292px;
+  margin-left: 93px;
   background: linear-gradient(
     to right bottom,
     #FFE128,
@@ -140,17 +156,88 @@ margin-right: 246px;
     #FF8381,
     #FF5489
   );
+  box-shadow: 
+    0px 14px 0px -5px #B95A4C,
+    0px 30px 0px -13px #732F26;
+}
+
+.reviews-subtitle,
+.reviews-text {
+  display: flex;
+  margin-left: 54px;
 }
 
 .reviews-maintext {
   display: flex;
 }
-
 .order {
+  text-align: center;
   background-image: url("../images/gradientorder.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.order-row {
+  display: flex;
+  width: 690px;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  background: white;
+}
+
+.order-confirm {
+  width: 130px;
+  background: white;
+  font-size: 28px;
+  color: #8d8d8d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;         
+  cursor: pointer;
+}
+
+.confirm-checkbox {
+  display: none;
+}
+
+.confirm-checkmark {
+  display: none;
+  font-size: 32px;
+  color: #959595;
+}
+
+.confirm-checkbox:checked + .order-confirm .confirm-checkmark {
+  display: inline;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.order-input {
+  border-radius: 50px 0 0 50px;
+  flex: 1;
+  width: 580px;
+  height: 50px;
+  border: none;
+  font-size: 28px;
+  padding-left: 24px;
+}
+
+.footer-page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-ipage {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*disign*/
@@ -174,6 +261,31 @@ height: 67px;
   line-height: 1.40;
 }
 
+.order-button {
+  border-radius: 16px;
+width: 248px;
+height: 68px;
+background-color: #8E32C6;
+margin-bottom: 37px;
+}
+
+.order-input {
+  border-radius: 50px;
+width: 580px;
+height: 50px;
+}
+
+.order-confirm {
+  width: 250px;
+height: 50px;
+}
+
+.order-button {
+  border-radius: 16px;
+width: 248px;
+height: 68px;
+background-color: #8E32C6;
+}
 
 .footer {
     background-color: #021635;
@@ -194,7 +306,6 @@ font-size: 24px;
 color: #FFFFFF;
 margin-left: 72px;
 }
-
 
 .headline-text {
 font-family: 'Roboto', sans-serif;
@@ -222,10 +333,10 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
-margin-bottom: 8px;
-margin-left: 13px;
-margin-right: 14px;
 margin-top: 49px;
+margin-bottom: 8px;
+margin-left: 18px;
+margin-right: 9px;
 }
 
 .reviews-date {
@@ -234,6 +345,7 @@ font-weight: 400;
 font-size: 14px;
 color: #D8D8D8;
 margin-bottom: 47px;
+margin-left: 18px;
 }
 
 .reviews-subtitle {
@@ -241,7 +353,8 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 14px;
 color: #FFFFFF;
-margin-bottom: 1px;
+margin-top: -29px;
+margin-bottom: 1px; 
 }
 
 .reviews-text {
@@ -256,6 +369,13 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 28px;
 color: #959595;
+}
+
+.order-confirm {
+  font-family: 'Roboto', sans-serif;
+font-weight: 400;
+font-size: 28px;
+color: #8d8d8d;
 }
 
 .order-button {
@@ -278,7 +398,8 @@ font-weight: 400;
 font-size: 24px;
 text-decoration: underline;
 text-decoration-skip-ink: none;
-color: #FFFFFF;}
+color: #FFFFFF;
+}
 
 .footer-text {
 font-family: 'Roboto', sans-serif;
@@ -330,6 +451,7 @@ font-family: 'Playfair Display', serif;
 font-weight: 400;
 font-size: 48px;
 color: #FFFFFF;
+margin-bottom: 33px;
 }
 
 /*Roboto Light*/
@@ -395,11 +517,37 @@ color: #FFFFFF;
   padding-bottom: 130px;
 }
 
-.quality-list {
-  display: flex;
-  gap: 145px;
+.reviews-title {
+  padding-top: 24px;
 }
 
-.reviews {
-  padding-left: 243px;
+.reviews-list {
+  padding-top: 24px;
+  padding-bottom: 114px;
+}
+
+.reviews-photo {
+  margin-left: 18px;
+}
+
+
+
+.footer-subtitle {
+  margin-left: 165px;
+  margin-right: 164px;
+}
+
+.footer-adress {
+  margin-left: 165px;
+  margin-right: 164px;
+}
+
+.footer-text {
+  margin-left: 165px;
+  margin-right: 164px;
+}
+
+.footer-ipage {
+  margin-left: 165px;
+  margin-right: 164px;
 }
