@@ -50,7 +50,7 @@ background-position: center;
 .quality-list {
   display: flex;
   align-items: center;
-  border: 5px solid #8e32c6;
+  outline: 5px solid #8e32c6;
   padding: 25px 0px;
 }
 
@@ -153,7 +153,6 @@ background-position: center;
 .reviews-subtitle,
 .reviews-text {
   display: flex;
-  margin-left: 54px;
 }
 
 .reviews-maintext {
@@ -334,8 +333,8 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 18px;
 color: #FFFFFF;
-margin-top: 19px;
 max-width: 508px;
+margin-top: 12px;
 }
 
 .headline-button {
@@ -344,7 +343,6 @@ font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
 margin-top: 41px;
-margin-bottom: 183px;
 }
 
 .reviews-maintext {
@@ -352,10 +350,7 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 24px;
 color: #FFFFFF;
-margin-top: 49px;
 margin-bottom: 8px;
-margin-left: 18px;
-margin-right: 9px;
 }
 
 .reviews-date {
@@ -363,8 +358,6 @@ font-family: 'Roboto', sans-serif;
 font-weight: 400;
 font-size: 14px;
 color: #D8D8D8;
-margin-bottom: 47px;
-margin-left: 18px;
 }
 
 .reviews-subtitle {
@@ -495,6 +488,7 @@ font-weight: 400;
 font-size: 48px;
 color: #FFFFFF;
 margin-top: -24px;
+margin-left: 39px;
 }
 
 .footer-pretitle {
@@ -511,15 +505,15 @@ color: #FFFFFF;
   padding-bottom: 14px;
 }
 
-.header-list {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.headline {
+  padding-top: 94px;
+  padding-bottom: 183px;
 }
 
 .headline-photo {
     width: 160px;
     height: 120px;
-  margin-top: 94px;
+    margin-left: 14px;
  }
 .quality {
   padding-left: 215px;
@@ -535,10 +529,6 @@ color: #FFFFFF;
 .reviews-list {
   padding-top: 24px;
   padding-bottom: 114px;
-}
-
-.reviews-photo {
-  margin-left: 18px;
 }
 
 
